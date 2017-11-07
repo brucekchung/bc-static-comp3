@@ -3,6 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Static Comp 3</title>
 </head>
@@ -10,14 +12,20 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="portrait">
+      <div class="portrait-background"></div>
       <h3 class="portrait-name">Lightning II</h3>
     </div>
     <div class="sidebar-section">Main</div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
+    <div class="sidebar-item"><p>
+      <i class="fa fa-home" aria-hidden="true"></i>HOME</p></div>
+    <div class="sidebar-item"><p>
+      <i class="fa fa-briefcase" aria-hidden="true"></i>JOBS</p></div>
+    <div class="sidebar-item"><p>
+      <i class="fa fa-file-text" aria-hidden="true"></i>RESUMES</p></div>
+    <div class="sidebar-item"><p>
+      <i class="fa fa-tasks" aria-hidden="true"></i>TASKS</p></div>
+    <div class="sidebar-item"><p>
+      <i class="fa fa-calendar" aria-hidden="true"></i>CALANDER</p></div>
     <div class="sidebar-section">Admin</div>
     <div class="sidebar-item"><p>Home</p></div>
     <div class="sidebar-item"><p>Home</p></div>
@@ -37,73 +45,95 @@
     <header>
       <div class="topbar">
         <div class="hamburger">
-          placeholder
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <input type="text" placeholder="search for a platform">
+        <input class="header-input" type="text" placeholder="&#xf002; search for a platform">
         <div class="topbar-trio-left">
-          placeholder
+          <i class="fa fa-user" aria-hidden="true"></i>
         </div>
         <div class="topbar-trio-center">
-          placeholder
+          <i class="fa fa-file-text" aria-hidden="true"></i>
         </div>
         <div class="topbar-trio-right">
-          placeholder
+          <i class="fa fa-th" aria-hidden="true"></i>
         </div>
       </div>
       <div class="center-content">
-        <h1 class="title">F-35 Lightning</h1>
-        <h4 class="header-location">Denver, CO</h4>
+        <h1 class="title">F-35 Lightning II</h1>
+        <h4 class="header-location">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          Denver, CO ·</h4>
         <h4 class="header-preview">Preview this post</h4>
         <div class="quad-icons">
-          <button>Open</button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button><i class="fa fa-circle" aria-hidden="true"></i>Open</button>
+          <button><i class="fa fa-bolt" aria-hidden="true"></i></button>
+          <button><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button><i class="fa fa-trash" aria-hidden="true"></i></button>
         </div>
       </div>
+      <ul class="main-nav">
+        <li>OVERVIEW</li>
+        <li>ENGINES</li>
+        <li>ARMAMENT</li>
+        <li>STEALTH</li>
+        <li>COCKPIT</li>
+        <li>SENSORS</li>
+        <li>MAINTAINENCE</li>
+      </ul>
     </header>
 
     <!-- MID -->
+    <div class="grey-wrapper"> <!-- greywrapper -->
     <section class="mid">
-      <ul class="main-nav">
-        <li>Overview</li>
-        <li>Engines</li>
-        <li>Armament</li>
-        <li>Stealth</li>
-        <li>Cockpit</li>
-        <li>Sensors</li>
-        <li>Maintainence</li>
-      </ul>
-      <div class="mid-main">
-        <div class="left-circle">3,234 Applicants</div>
-        <div class="middle-circle">2,345 Interviews</div>
-        <div class="right-circle">456 Forwards</div>
-        <div class="graph"></div>
-        <button>Totals</button>
-        <button>Applicants/Day</button>
+      <div class="mid-wrapper">
+        <div class="mid-main">
+          <div class="left-circle"><h2>50,000</h2> 
+            <h3>ft ceiling</h3></div>
+          <div class="middle-circle"><h2>1,200</h2>
+            <h3>nmi range</h3></div>
+          <div class="right-circle"><h2>1.6+</h2>
+            <h3>mach</h3></div>
+          <div class="main-image"></div>
+        </div>
+        <div class="button-wrapper">
+          <button>Totals</button>
+          <button>Applicants/Day</button>
+        </div>
       </div>
+    </section>
+
+    <!-- DIVIDER  -->
+    <section class="divider">
+      <div class="divider-left"></div>
+      <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+      <div class="divider-right"></div>
     </section>
 
     <!-- BOTTOM -->
     <section class="bottom">
-      <!-- ARTICLE -->
-      <article>
+    <!-- ARTICLE -->
+      <article class="list">
         <dl>
-          <dt>Role</dt>
+          <dt class="first">OVERVIEW</dt>
+          <dd class="first"><button>
+            <i class="fa fa-pencil" aria-hidden="true">
+            </i>EDIT</button>
+          </dd>
+          <dt>ROLE</dt>
           <dd>Stealth multirole fighter</dd>
-          <dt>National origin</dt>
+          <dt>NATIONAL ORIGIN</dt>
           <dd>United States</dd>
-          <dt>Manufacturer</dt>
+          <dt>MANUFACTURER</dt>
           <dd>Lockheed Martin Aeronautics</dd>
-          <dt>First Flight</dt>
+          <dt>FIRST FLIGHT</dt>
           <dd>15 Dec 2006</dd>
-          <dt>Status</dt>
+          <dt>STATUS</dt>
           <dd>In service</dd>
-          <dt>Produced</dt>
+          <dt>PRODUCED</dt>
           <dd>2006 - present</dd>
-          <dt>Number built</dt>
+          <dt>NUMBER BUILT</dt>
           <dd>231 as of March 2017</dd>
-          <dt>Program cost</dt>
+          <dt>PROGRAM COST</dt>
           <dd>$1.508 trillion</dd>
         </dl>
       </article>
@@ -111,13 +141,13 @@
       <!-- ASIDE -->
       <aside class="bottom-aside">
         <div class="bottom-buttons">
-          <button>Facebook</button>
-          <button>Twitter</button>
-          <button>LinkedIn</button>
+          <button class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</button>
+          <button class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</button>
+          <button class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</button>
         </div>
         <div class="aside-top">
           <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <form>
             <input type="text">
             <button>Copy</button>
@@ -125,7 +155,7 @@
         </div>
         <div class="aside-mid">
           <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <form>
             <input type="text">
             <button>Copy</button>
@@ -133,7 +163,7 @@
         </div>
         <div class="aside-bottom">
           <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <form>
             <input type="text">
             <button>Copy</button>
@@ -141,6 +171,7 @@
         </div>
         <!-- end aside -->
       </aside>
+      </div> <!-- grey wrapper -->
     </section>
   </main>
 </body>
