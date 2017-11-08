@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Static Comp 3</title>
@@ -16,27 +17,36 @@
       <h3 class="portrait-name">Lightning II</h3>
     </div>
     <div class="sidebar-section">Main</div>
-    <div class="sidebar-item"><p>
-      <i class="fa fa-home" aria-hidden="true"></i>HOME</p></div>
-    <div class="sidebar-item"><p>
-      <i class="fa fa-briefcase" aria-hidden="true"></i>JOBS</p></div>
-    <div class="sidebar-item"><p>
-      <i class="fa fa-file-text" aria-hidden="true"></i>RESUMES</p></div>
-    <div class="sidebar-item"><p>
-      <i class="fa fa-tasks" aria-hidden="true"></i>TASKS</p></div>
-    <div class="sidebar-item"><p>
-      <i class="fa fa-calendar" aria-hidden="true"></i>CALANDER</p></div>
+    <div class="sidebar-item"><i class="fa fa-home" aria-hidden="true"></i>
+      <p>HOME</p></div>
+    <div class="sidebar-item"><i class="fa fa-briefcase" aria-hidden="true"></i>
+      <p>JOBS</p></div>
+    <div class="sidebar-item"><i class="fa fa-file-text" aria-hidden="true"></i>
+      <p>RESUMES</p></div>
+    <div class="sidebar-item"><i class="fa fa-tasks" aria-hidden="true"></i>
+      <p>TASKS</p></div>
+    <div class="sidebar-item end"><i class="fa fa-calendar" aria-hidden="true"></i>
+      <p>CALANDER</p></div>
     <div class="sidebar-section">Admin</div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
+    <div class="sidebar-item"><i class="fa fa-user" aria-hidden="true"></i>
+      <p>USERS</p></div>
+    <div class="sidebar-item"><i class="fa fa-globe" aria-hidden="true"></i>
+      <p>LOCATIONS</p></div>
+    <div class="sidebar-item"><i class="fa fa-building" aria-hidden="true"></i>
+      <p>WORKFLOWS</p></div>
+    <div class="sidebar-item"><i class="fa fa-address-card" aria-hidden="true"></i>
+      <p>JOB BOARDS</p></div>
+    <div class="sidebar-item end"><i class="fa fa-share-square" aria-hidden="true"></i>
+      <p>SOCIAL</p></div>
     <div class="sidebar-section">Categories</div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
-    <div class="sidebar-item"><p>Home</p></div>
+    <div class="sidebar-item"><i class="yellow fa fa-square" aria-hidden="true"></i>
+      <p>Administrative</p></div>
+    <div class="sidebar-item"><i class="blue fa fa-square" aria-hidden="true"></i>
+      <p>Design</p></div>
+    <div class="sidebar-item"><i class="red fa fa-square" aria-hidden="true"></i>
+      <p>Executive</p></div>
+    <div class="sidebar-item"><i class="green fa fa-square" aria-hidden="true"></i>
+      <p>Human Resources</p></div>
   </aside>
 
   <!-- MAIN -->
@@ -62,17 +72,17 @@
         <h1 class="title">F-35 Lightning II</h1>
         <h4 class="header-location">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
-          Denver, CO ·</h4>
+          Denver, CO &nbsp·</h4>
         <h4 class="header-preview">Preview this post</h4>
         <div class="quad-icons">
-          <button><i class="fa fa-circle" aria-hidden="true"></i>Open</button>
+          <button class="oval-button"><i class="fa fa-circle" aria-hidden="true"></i>Open</button>
           <button><i class="fa fa-bolt" aria-hidden="true"></i></button>
           <button><i class="fa fa-pencil" aria-hidden="true"></i></button>
           <button><i class="fa fa-trash" aria-hidden="true"></i></button>
         </div>
       </div>
       <ul class="main-nav">
-        <li>OVERVIEW</li>
+        <li class="active">OVERVIEW</li>
         <li>ENGINES</li>
         <li>ARMAMENT</li>
         <li>STEALTH</li>
@@ -96,8 +106,8 @@
           <div class="main-image"></div>
         </div>
         <div class="button-wrapper">
-          <button>Totals</button>
-          <button>Applicants/Day</button>
+          <button>SPECIFICATIONS</button>
+          <button>DEVELOPMENT</button>
         </div>
       </div>
     </section>
@@ -114,7 +124,7 @@
     <!-- ARTICLE -->
       <article class="list">
         <dl>
-          <dt class="first">OVERVIEW</dt>
+          <dt class="first align-text">OVERVIEW</dt>
           <dd class="first"><button>
             <i class="fa fa-pencil" aria-hidden="true">
             </i>EDIT</button>
@@ -122,7 +132,7 @@
           <dt>ROLE</dt>
           <dd>Stealth multirole fighter</dd>
           <dt>NATIONAL ORIGIN</dt>
-          <dd>United States</dd>
+          <dd><img class="flag" src="images/us-flag.jpg" alt="us-flag">United States</dd>
           <dt>MANUFACTURER</dt>
           <dd>Lockheed Martin Aeronautics</dd>
           <dt>FIRST FLIGHT</dt>
@@ -133,41 +143,40 @@
           <dd>2006 - present</dd>
           <dt>NUMBER BUILT</dt>
           <dd>231 as of March 2017</dd>
-          <dt>PROGRAM COST</dt>
-          <dd>$1.508 trillion</dd>
+          <dt class="last-item">PROGRAM COST</dt>
+          <dd class="last-item">1.508 trillion (through 2070 in then-year dollars), US$55.1B for RDT&E, $319.1B for procurement, $4.8B for MILCON, $1123.8B for operations & sustainment (2015 estimate)</dd>
         </dl>
       </article>
 
       <!-- ASIDE -->
       <aside class="bottom-aside">
         <div class="bottom-buttons">
-          <button class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</button>
-          <button class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</button>
-          <button class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</button>
+          <button class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i><p>post to Facebook</p></button>
+          <button class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i><p>post to Twitter</p></button>
+          <button class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i><p>post to LinkedIn</p></button>
         </div>
         <div class="aside-top">
-          <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-          <form>
-            <input type="text">
+          <h2><i class="fa fa-fighter-jet" aria-hidden="true"></i>&nbsp Link to this Platform</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="link-field">
+            <p>www.bulletsforever.com</p>
             <button>Copy</button>
-          </form>
+          </div>
         </div>
         <div class="aside-mid">
-          <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-          <form>
-            <input type="text">
+          <h2><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp Use the Button Widget</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="link-field">
+            <p>src=myGitHub-greatestGitHubEver</p>
             <button>Copy</button>
-          </form>
+          </div>
         </div>
         <div class="aside-bottom">
-          <h2>Link to this Job</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-          <form>
-            <input type="text">
-            <button>Copy</button>
-          </form>
+          <h2><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp Upload Resumes by Email</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="link-field">
+            <p>Mod1Turing@turingschoo.com</p>
+          </div>
         </div>
         <!-- end aside -->
       </aside>
