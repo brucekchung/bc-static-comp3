@@ -253,10 +253,13 @@ li {
 
 .left-circle {
   border: 10px solid #663399;
+  border-left-color: gray;
 }
 
 .middle-circle {
   border: 10px solid #336E7B;
+  border-right-color: gray;
+  border-bottom-color: gray;
 }
 
 .right-circle {
@@ -266,10 +269,10 @@ li {
 .main-image {
   height: 180px;
   width: 400px;
-  background-image: url("images/f35.jpg");
+  background-image: url("images/f35-ground.jpeg");
   background-size: cover;
   background-repeat: none;
-  background-position: 0 -80px;
+  /*background-position: 0 -80px;*/
   margin-right: 10px;
 }
 
@@ -425,10 +428,15 @@ dd {
   border-bottom: 2px solid gray;
 }
 
-.link-field {
+.link-field,
+.last {
   background-color: white;
   position: relative;
   padding: 7px;
+  /*margin: 20px 0;*/
+}
+
+.link-field {
   margin: 20px 0;
 }
 
@@ -445,6 +453,10 @@ dd {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.last {
+  margin-top: 20px;
 }
 
 
