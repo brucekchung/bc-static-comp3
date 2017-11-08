@@ -118,7 +118,7 @@ button {
 
 .topbar {
   width: 100%;
-  border: 2px solid grey;
+  border-bottom: 2px solid grey;
   display: flex;
 }
 
@@ -177,13 +177,22 @@ header {
 .quad-icons button {
   border-radius: 100%;
   font-size: 1.1em;
-  width: 36px;
+  width: 35px;
   margin-left: 10px;
+  padding: 5px;
 }
 
 .quad-icons .oval-button {
-  width: 50px;
+  width: 90px;
   border-radius: 30px;
+}
+
+.fa-pencil {
+  margin: none;
+}
+
+.quad-icons .oval-button i {
+  font-size: .8em;
 }
 
 .center-content {
@@ -194,6 +203,7 @@ header {
 .quad-icons i {
   color: grey;
   margin: 5px;
+  display: inline;
 }
 
 .fa-circle {
@@ -254,12 +264,12 @@ li {
 }
 
 .main-image {
-  height: 160px;
-  width: 300px;
+  height: 180px;
+  width: 400px;
   background-image: url("images/f35.jpg");
   background-size: cover;
   background-repeat: none;
-  background-position: 0 -20px;
+  background-position: 0 -80px;
   margin-right: 10px;
 }
 
@@ -357,6 +367,10 @@ dd {
   padding: 26.5px;
 }
 
+.align2 {
+  padding: 21px;
+}
+
 .bottom-buttons {
   display: flex;
   flex-direction: column;
@@ -447,10 +461,6 @@ dd {
 
   .sidebar {
     display: none;
-  }
-
-  .topbar {
-  
   }
 
   .quad-icons {
