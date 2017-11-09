@@ -1,7 +1,7 @@
 * {
+  -webkit-appearance: none;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  -webkit-appearance: none;
 }
 
 body {
@@ -26,28 +26,28 @@ input[type="submit" i],
 input[type="reset" i], 
 input[type="file" i]::-webkit-file-upload-button, 
 button {
-    cursor: default;
-    color: none;
     background-color: white;
-    box-sizing: border-box;
-    padding: none;
     border: 1.5px solid grey;
+    box-sizing: border-box;
+    color: none;
+    cursor: default;
+    padding: none;
 }
 
 .grey-wrapper {
-  border-top: 2px solid gray;
   background-color: lightgray;
+  border-top: 1px solid gray;
 }
 
 /* SIDEBAR */
 
 .sidebar {
-  width: 20%;
-  border: 1px solid black;
   background-color: #394252;
-  vertical-align: top;
-  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
   color: #B2B2B2;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top;
+  width: 20%;
 }
 
 .sidebar-section {
@@ -55,13 +55,13 @@ button {
 }
 
 .end {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   padding-bottom: 30px;
 }
 
 .sidebar-item {
-  padding: 10px;
   padding-left: 20px;
+  padding: 10px;
 }
 
 .sidebar-item i {
@@ -69,12 +69,12 @@ button {
 }
 
 .sidebar-item p {
-  margin-left: 10px;
   display: inline-block;
+  margin-left: 10px;
 }
 
 .portrait {    
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .sidebar-section {
@@ -83,19 +83,19 @@ button {
 }
 
 .portrait-background {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  border: 1px solid black;
   background-image: url("images/navy-seal.png");
   background-size: cover;
-  margin: 0 auto;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 100px;
   margin-top: 20px;
+  margin: 0 auto;
+  width: 100px;
 }
 
 .portrait-name {
-  text-align: center;
   margin: 15px;
+  text-align: center;
 }
 
 .red {
@@ -115,15 +115,10 @@ button {
 }
 
 /* TOPBAR */
-
-/*.topbar input {
-  font-family: fontawesome;
-}*/
-
 .topbar {
-  width: 100%;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
   display: flex;
+  width: 100%;
 }
 
 .topbar i {
@@ -131,26 +126,34 @@ button {
   margin: 15px;
 }
 
+.topbar input {
+  font-family: "FontAwesome", Sans-serif;
+}
+
 .hamburger {
+  border-right: 1px solid grey;
   display: inline-block;
-  border-right: 2px solid grey;
+  font-size: 1.5em;
 }
 
 .topbar-trio-left,
 .topbar-trio-center,
 .topbar-trio-right {
-  border-left: 2px solid grey;
+  border-left: 1px solid grey;
   display: inline-block;
+  font-size: 1.5em;
   margin-left: auto;
 }
 
 /* HEADER BOTTOM PART */
 header {
   border: none;
+  position: relative;
 }
 
 .title {
   font-size: 2em;
+  line-height: 2;
 }
 
 .header-location,
@@ -161,34 +164,34 @@ header {
 }
 
 .header-input {
-  width: 100%;
   font-size: 1.3em;
   padding: 5px;
+  width: 100%;
 }
 
 .header-preview {
-  margin-left: 5px;
   color: blue;
+  margin-left: 5px;
 }
 
 .quad-icons {
+  bottom: 40px;
   display: inline-block;
   position: absolute;
-  bottom: 30px;
   right: 30px;
 }
 
 .quad-icons button {
   border-radius: 100%;
   font-size: 1.1em;
-  width: 35px;
   margin-left: 10px;
   padding: 5px;
+  width: 35px;
 }
 
 .quad-icons .oval-button {
-  width: 90px;
   border-radius: 30px;
+  width: 90px;
 }
 
 .fa-pencil {
@@ -206,8 +209,8 @@ header {
 
 .quad-icons i {
   color: grey;
-  margin: 5px;
   display: inline;
+  margin: 5px;
 }
 
 .fa-circle {
@@ -216,17 +219,29 @@ header {
 
 li {
   display: inline;
-  font-size: .8em;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .active {
   font-weight: 700;
+  margin-left: 20px;
+}
+
+.active i {
+  display: none;
 }
 
 /* MID */
 .main-nav {
-  margin: 10px 0 20px 0;
+  display: inline-block;
+  margin: 10px 0;
+  position: relative;
+}
+
+.toggle-main-nav{
+    display: none;
+    font-size: 25px;
+    margin: 0 0 0 25px;
 }
 
 .mid-wrapper {
@@ -234,43 +249,43 @@ li {
 } 
 
 .mid-main {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
 }
 
 .circle-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 55%;
   margin-right: 20px;
+  width: 55%;
 }
 
 .left-circle,
 .middle-circle,
 .right-circle {
-  border: 1px solid black;
-  height: 150px;
-  width: 150px;
   -moz-border-radius: 1000px;
   -webkit-border-radius: 100px;
+  align-items: center;
   border-radius: 100px;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  height: 150px;
   justify-content: center;
-  align-items: center;
+  width: 150px;
 }
 
 .left-circle {
-  border: 10px solid #663399;
   border-left-color: gray;
+  border: 10px solid #663399;
 }
 
 .middle-circle {
-  border: 10px solid #336E7B;
-  border-right-color: gray;
   border-bottom-color: gray;
+  border-right-color: gray;
+  border: 10px solid #336E7B;
 }
 
 .right-circle {
@@ -278,13 +293,12 @@ li {
 }
 
 .main-image {
-  height: 180px;
-  width: 400px;
   background-image: url("images/f35-ground.jpeg");
-  background-size: cover;
   background-repeat: none;
-  /*background-position: 0 -80px;*/
+  background-size: cover;
+  height: 180px;
   margin-right: 10px;
+  width: 400px;
 }
 
 .button-wrapper {
@@ -299,16 +313,16 @@ li {
 
 /* DIVIDER */
 .divider {
-  padding: 15px 2%;
   background-color: lightgrey;
+  padding: 15px 2%;
 }
 
 .divider-left,
 .divider-right {
-  width: 47%;
   border: 1px solid grey;
   display: inline-block;
   margin-bottom: 5px;
+  width: 47%;
 }
 
 .divider i {
@@ -324,13 +338,13 @@ li {
 }
 
 article {
-  width: 60%;
   background-color: white;
+  width: 60%;
 }
 
 .bottom-aside {
-  width: 30%;
   background-color: lightgrey;
+  width: 30%;
 }
 
 section article {
@@ -338,19 +352,19 @@ section article {
 }
 
 dt {
-  float: left;
-  width: 35%;
-  padding: 20px;
-  font-weight: 700;
   border-bottom: 1px solid grey;
   color: #394252;
+  float: left;
+  font-weight: 700;
+  padding: 20px;
+  width: 35%;
 }
 
 dd {
-  float: left;
-  width: 65%;
-  padding: 20px;
   border-bottom: 1px solid grey;
+  float: left;
+  padding: 20px;
+  width: 65%;
 }
 
 .last-item {
@@ -369,9 +383,9 @@ dd {
 }
 
 .first button {
+  background-color: navy;
   border: none;
   color: #B2B2B2;
-  background-color: navy;
   padding: 8px;
 }
 
@@ -389,9 +403,9 @@ dd {
 }
 
 .bottom-buttons button {
-  margin-bottom: 10px;
-  font-size: 1.1em;
   border: none;
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
 .bottom-buttons p {
@@ -399,10 +413,10 @@ dd {
 }
 
 .bottom-buttons i {
-  float: left;
-  margin: 10px;
-  height: 15px;
   color: white;
+  float: left;
+  height: 15px;
+  margin: 10px;
 }
 
 .facebook {
@@ -434,21 +448,20 @@ dd {
 
 .aside-mid,
 .aside-top {
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .link-field,
 .last {
   background-color: white;
-  position: relative;
   padding: 7px;
-  /*margin: 20px 0;*/
+  position: relative;
 }
 
 .link-field {
   margin: 20px 0;
-  white-space: nowrap;
   overflow-x:scroll;
+  white-space: nowrap;
 }
 
 .link-field p {
@@ -457,10 +470,10 @@ dd {
 
 .aside-mid button,
 .aside-top button {
-  height: 100%;
   background-color: #AEA8D3;
   border: none;
   display: inline-block;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
@@ -472,10 +485,10 @@ dd {
 
 /* HOVER STATES */
 .sidebar-item:hover {
-  color: white;
   background-color: #013243;
-  cursor: pointer;
   border-left: 1px solid white;
+  color: white;
+  cursor: pointer;
 }
 
 .trio:hover {
@@ -501,11 +514,11 @@ dd {
 }
 
 button:hover {
-  color: white;
-  font-weight: 700;
   background-color: navy;
-  cursor: pointer;
   border: 1px solid navy;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 button:hover > .fa {
@@ -513,10 +526,10 @@ button:hover > .fa {
 }
 
 .first button:hover {
-  font-weight: 400;
-  border: none;
   background-color: white;
+  border: none;
   color: navy;
+  font-weight: 400;
 }
 
 .first button:hover > .fa {
@@ -532,8 +545,8 @@ button:hover > .fa {
 li:hover {
   background-color: navy;
   color: white;
-  font-weight: 700;
   cursor: pointer;
+  font-weight: 700;
 }
 
 
@@ -545,8 +558,8 @@ li:hover {
 
   .main-image {
     height: 150px;
-    width: 350px;
     margin-right: 0;
+    width: 350px;
   }
   .circle-wrapper {
     width: 50%;
@@ -557,6 +570,11 @@ li:hover {
   .right-circle {
     height: 100px;
     width: 100px;
+  }
+
+  li {
+    font-size: .9em;
+    margin-left: 20px;
   }
 
   h2 {
@@ -592,12 +610,37 @@ li:hover {
     flex-direction: column;
   }
 
+  .toggle-main-nav{
+    display: inline-block;
+  }
+
+   .main-nav ul {
+    background: #fff;
+    border: 1px solid grey;
+    display: none;
+    left: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 200px;
+  }
+
+  .main-nav:hover ul {
+    display: inline-block;
+  }
+
+  .main-nav ul li {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 10px;;
+  }
+
+
   .main-image {
-    height: 180px;
-    width: 500px;
     background-image: url("images/f35-hover.jpg");
     background-position: 0 -10px;
+    height: 180px;
     margin-top: 20px;
+    width: 500px;
   }
 
   .circle-wrapper {
@@ -629,16 +672,16 @@ li:hover {
   }
 
   article {
-    width: 85%;
-    margin: 0 auto;
     background-color: white;
     margin-bottom: 20px;
+    margin: 0 auto;
+    width: 85%;
   }
 
   .bottom-aside {
-    width: 85%;
-    margin: 0 auto;
     background-color: lightgrey;
+    margin: 0 auto;
+    width: 85%;
   }
 }
 
@@ -695,15 +738,15 @@ li:hover {
   }
 
   .main-image {
-    width: 96%;
-    margin: 0 auto;
     background-position: cover;
+    margin: 0 auto;
+    width: 96%;
   }
 
   .mid-main {
-    width: 100%;
     margin: 0 auto;
     padding: 10px 0;
+    width: 100%;
   }
 
   .quad-icons {
@@ -724,8 +767,8 @@ li:hover {
   .middle-circle,
   .right-circle {
     height: 80px;
-    width: 80px;
     margin-bottom: 15px;
+    width: 80px;
   }
 
   h2 {
@@ -747,18 +790,18 @@ li:hover {
   }
 
   dd {
-    float: none;
-    width: 80%;
-    padding: 0;
-    margin-left: 40px;
     border-bottom: none;
+    float: none;
+    margin-left: 40px;
+    padding: 0;
+    width: 80%;
   }
 
   dt {
-    float: none;
-    width: 45%;
-    padding: none;
     border-bottom: none;
+    float: none;
+    padding: none;
+    width: 45%;
   }
 
   .first {
